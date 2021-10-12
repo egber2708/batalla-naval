@@ -1,0 +1,80 @@
+// Base in Figma Files
+// Primaries, gray and gradients
+
+$color-black: #000000;
+$color-white: #ffffff;
+$color-gray1: #c4c4c4;
+$color-gray2: #a2b2c2;
+$color-gray3: #f4f4f4;
+$color-gray4: #f8f8fa;
+$color-supply: #427dff;
+$color-demand: #ffa055;
+$color-spectrum: #e42277;
+$color-focused: #3b58e5;
+$color-alert: #ff392e;
+$color-active: #44D7B6;
+
+@mixin gradient-supply {
+  background: -webkit-gradient(180deg, #007aff 0%, #7048e8 100%);
+  background: -moz-gradient(180deg, #007aff 0%, #7048e8 100%);
+  background: -ms-gradient(180deg, #007aff 0%, #7048e8 100%);
+  background: linear-gradient(180deg, #007aff 0%, #7048e8 100%);
+}
+@mixin gradient-demand {
+  background: -webkit-gradient(180deg, #ff9f56 0%, #f05868 100%);
+  background: -moz-gradient(180deg, #ff9f56 0%, #f05868 100%);
+  background: -ms-gradient(180deg, #ff9f56 0%, #f05868 100%);
+  background: linear-gradient(180deg, #ff9f56 0%, #f05868 100%);
+}
+
+@mixin gradient-spectrum {
+  background: -webkit-gradient(
+    202.17deg,
+    #4163e3 8.58%,
+    #7d25e3 42.66%,
+    #e42277 72.87%,
+    #ffa055 91.42%
+  );
+  background: -moz-gradient(
+    202.17deg,
+    #4163e3 8.58%,
+    #7d25e3 42.66%,
+    #e42277 72.87%,
+    #ffa055 91.42%
+  );
+  background: -ms-gradient(
+    202.17deg,
+    #4163e3 8.58%,
+    #7d25e3 42.66%,
+    #e42277 72.87%,
+    #ffa055 91.42%
+  );
+  background: linear-gradient(
+    202.17deg,
+    #4163e3 8.58%,
+    #7d25e3 42.66%,
+    #e42277 72.87%,
+    #ffa055 91.42%
+  );
+}
+
+@mixin color-gradient-supply {
+  @include gradient-supply;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@mixin color-gradient-demand {
+  @include gradient-demand;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@mixin color-gradient-spectrum {
+  @include gradient-spectrum;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+// Spacing
+//The 8-pt grid. Using multiples of 8 to define dimensions, padding, and margin of elements.
+$spacing: 8px;

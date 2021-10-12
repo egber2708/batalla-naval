@@ -1,0 +1,60 @@
+// Predefined Break-points
+$phone-width: 76px;
+$phone-large-width: 600px;
+$tablet-width: 768px;
+$tablet-large-width: 920px;
+$desktop-width: 1024px;
+$desktop-large-width: 1439px;
+
+// Extra small devices (phones, 600px and down
+@mixin view-phones {
+  @media (max-width: $phone-large-width) {
+    @content;
+  }
+}
+
+//  Tablets and large phones, 600px and up
+@mixin view-large-phones {
+  @media (min-width: $phone-large-width) {
+    @content;
+  }
+}
+
+// Land scape tablets, 768px and up
+@mixin view-tablets {
+  @media (min-width: $tablet-width) {
+    @content;
+  }
+}
+
+// Large Tablets and Small desktops 920px and up)
+@mixin view-large-tablets {
+  @media (min-width: $tablet-large-width) {
+    @content;
+  }
+}
+
+//  laptops and desktops, 1200px and up
+@mixin view-desktops {
+  @media (min-width: $desktop-width) {
+    @content;
+  }
+}
+
+//  Large laptops and desktops, 1450px and up)
+@mixin view-large-desktop {
+  @media (min-width: $desktop-large-width) {
+    @content;
+  }
+}
+
+
+// ANIMATIONS EFECTS
+
+@mixin fade-in ($time: 2s) {
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration:$time;
+}
