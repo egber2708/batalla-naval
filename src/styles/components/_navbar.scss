@@ -1,0 +1,14 @@
+.navbar-container{
+    width: 100%;
+    background-color: $color-black;
+    @extend .row-flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: $spacing;
+    color: $color-white;
+    .navbar-link-container{
+        a{
+            margin-right: $spacing;
+        }
+    }
+}

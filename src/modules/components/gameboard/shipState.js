@@ -1,13 +1,8 @@
 import React from 'react'
 
-export default function shipState(props) {
- 
-    const {ships} = props;
- 
- 
+export const ShipState = () => {
     return (
         <div>
-            
             
         </div>
     )

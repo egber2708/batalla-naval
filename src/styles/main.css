@@ -451,63 +451,41 @@ fieldset {
 }
 
 h1 {
-  font-size: 24px;
+  font-size: 32px;
   font-weight: 700;
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 28px;
   font-weight: 600;
 }
 
 h3 {
-  font-size: 17px;
+  font-size: 24px;
   font-weight: 600;
 }
 
 h4 {
-  font-size: 17px;
+  font-size: 20px;
   font-weight: 500;
 }
 
 h5 {
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 600;
 }
 
 h6 {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
 }
 
-/** Used to define container behavior: width, position: fixed etc... **/
-.Toastify__toast-container {
-  margin-top: 36px;
+label, p, a, li, span {
+  font-size: 14px;
+  font-weight: 400;
 }
 
-/** Used to define the position of the ToastContainer **/
-/** Classes for the displayed toast **/
-.Toastify__toast-body {
-  width: 100%;
-}
-
-/** Classes for the close button. Better use your own closeButton **/
-.Toastify__close-button {
-  display: none;
-}
-
-/** Classes for the progress bar **/
-.Toastify__progress-bar--dark {
-  background: -webkit-gradient(202.17deg, #4163e3 8.58%, #7d25e3 42.66%, #e42277 72.87%, #ffa055 91.42%);
-  background: -moz-gradient(202.17deg, #4163e3 8.58%, #7d25e3 42.66%, #e42277 72.87%, #ffa055 91.42%);
-  background: -ms-gradient(202.17deg, #4163e3 8.58%, #7d25e3 42.66%, #e42277 72.87%, #ffa055 91.42%);
-  background: linear-gradient(202.17deg, #4163e3 8.58%, #7d25e3 42.66%, #e42277 72.87%, #ffa055 91.42%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: unset;
-}
-
-.row-flex, .row-flex--fw {
+.row-flex, .row-flex--fw, .navbar-container {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -574,134 +552,75 @@ input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="email"]:focus {
   outline: 0;
-  border: 1px solid #3b58e5;
+  border: 1px solid #064e91;
 }
 
 input[type="text"]::-webkit-input-placeholder,
 input[type="password"]::-webkit-input-placeholder,
 input[type="email"]::-webkit-input-placeholder {
-  color: #a2b2c2;
+  color: #818181;
 }
 
 input[type="text"]:-ms-input-placeholder,
 input[type="password"]:-ms-input-placeholder,
 input[type="email"]:-ms-input-placeholder {
-  color: #a2b2c2;
+  color: #818181;
 }
 
 input[type="text"]::-ms-input-placeholder,
 input[type="password"]::-ms-input-placeholder,
 input[type="email"]::-ms-input-placeholder {
-  color: #a2b2c2;
+  color: #818181;
 }
 
 input[type="text"]::placeholder,
 input[type="password"]::placeholder,
 input[type="email"]::placeholder {
-  color: #a2b2c2;
+  color: #818181;
 }
 
 input[type="text"]::-webkit-input-placeholder:focus,
 input[type="password"]::-webkit-input-placeholder:focus,
 input[type="email"]::-webkit-input-placeholder:focus {
   outline: 0;
-  border: 1px solid #3b58e5;
+  border: 1px solid #064e91;
 }
 
 input[type="text"]:-ms-input-placeholder:focus,
 input[type="password"]:-ms-input-placeholder:focus,
 input[type="email"]:-ms-input-placeholder:focus {
   outline: 0;
-  border: 1px solid #3b58e5;
+  border: 1px solid #064e91;
 }
 
 input[type="text"]::-ms-input-placeholder:focus,
 input[type="password"]::-ms-input-placeholder:focus,
 input[type="email"]::-ms-input-placeholder:focus {
   outline: 0;
-  border: 1px solid #3b58e5;
+  border: 1px solid #064e91;
 }
 
 input[type="text"]::placeholder:focus,
 input[type="password"]::placeholder:focus,
 input[type="email"]::placeholder:focus {
   outline: 0;
-  border: 1px solid #3b58e5;
+  border: 1px solid #064e91;
 }
 
-.toggle-button, .toggle-button-supply, .toggle-button-supply--inverted, .toggle-button-demmand-inverted {
-  width: 55px;
-  height: 24px;
-  background-color: #c4c4c4;
-  border-radius: 15.5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  padding: 3px 5px;
+.navbar-container {
+  width: 100%;
+  background-color: #000000;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 8px;
+  color: #ffffff;
 }
 
-.toggle-button label, .toggle-button-supply label, .toggle-button-supply--inverted label, .toggle-button-demmand-inverted label {
-  cursor: pointer;
-  width: 17px;
-  height: 17px;
-  border-radius: 50%;
-  background-color: whitesmoke;
-  -webkit-box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.05), 0px 3px 1px rgba(0, 0, 0, 0.0510643), 0px 2px 2px rgba(0, 0, 0, 0.1), 0px 3px 3px rgba(0, 0, 0, 0.05);
-          box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.05), 0px 3px 1px rgba(0, 0, 0, 0.0510643), 0px 2px 2px rgba(0, 0, 0, 0.1), 0px 3px 3px rgba(0, 0, 0, 0.05);
-}
-
-.toggle-button-supply, .toggle-button-supply--inverted, .toggle-button-demmand-inverted {
-  width: 51px;
-  height: 31px;
-  background: -webkit-gradient(180deg, #007aff 0%, #7048e8 100%);
-  background: -moz-gradient(180deg, #007aff 0%, #7048e8 100%);
-  background: -ms-gradient(180deg, #007aff 0%, #7048e8 100%);
-  background: -webkit-gradient(linear, left top, left bottom, from(#007aff), to(#7048e8));
-  background: linear-gradient(180deg, #007aff 0%, #7048e8 100%);
-  padding: 1.5px 2.5px;
-}
-
-.toggle-button-supply label, .toggle-button-supply--inverted label, .toggle-button-demmand-inverted label {
-  width: 28px;
-  height: 28px;
-}
-
-.toggle-button-supply--inverted {
-  background: white;
-}
-
-.toggle-button-supply--inverted label {
-  background: -webkit-gradient(180deg, #007aff 0%, #7048e8 100%);
-  background: -moz-gradient(180deg, #007aff 0%, #7048e8 100%);
-  background: -ms-gradient(180deg, #007aff 0%, #7048e8 100%);
-  background: -webkit-gradient(linear, left top, left bottom, from(#007aff), to(#7048e8));
-  background: linear-gradient(180deg, #007aff 0%, #7048e8 100%);
-}
-
-.toggle-button-demmand-inverted {
-  background: white;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-}
-
-.toggle-button-demmand-inverted label {
-  background: -webkit-gradient(180deg, #ff9f56 0%, #f05868 100%);
-  background: -moz-gradient(180deg, #ff9f56 0%, #f05868 100%);
-  background: -ms-gradient(180deg, #ff9f56 0%, #f05868 100%);
-  background: -webkit-gradient(linear, left top, left bottom, from(#ff9f56), to(#f05868));
-  background: linear-gradient(180deg, #ff9f56 0%, #f05868 100%);
-}
-
-div {
-  font-size: 32px;
+.navbar-container .navbar-link-container a {
+  margin-right: 8px;
 }
 /*# sourceMappingURL=main.css.map */

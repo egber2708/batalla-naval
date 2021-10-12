@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react";
-import ShipState from "../components/gameboard/shipState";
+
 import {useInitializeGame} from '../../hooks/useInitializeGame';
 
 export const GameBoard = ({name, level, history}) => {
@@ -25,7 +25,6 @@ export const GameBoard = ({name, level, history}) => {
   const [pointList, setPointList] = useState([]);
 
   useEffect(() => {
-
       if (livePoint === 0) {
           history.push('/')
           alert('Game Over')
@@ -83,7 +82,6 @@ export const GameBoard = ({name, level, history}) => {
           );
         })}
       </div>
-      <ShipState ships={shipPositions} />
     </div>
   );
 };
